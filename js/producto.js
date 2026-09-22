@@ -1,4 +1,4 @@
-// Archivo puente para conservar la estructura del proyecto
+// Cargar el JavaScript de producto desde la raíz del proyecto
 const noirProductScript = document.createElement("script");
-noirProductScript.src = "../producto.js";
+noirProductScript.src = "producto.js";
 document.head.appendChild(noirProductScript);
