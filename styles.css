@@ -1,0 +1,493 @@
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    background-color: #050505;
+    color: #f5f3ee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+/* =====================================================
+   NAVBAR PRINCIPAL
+===================================================== */
+
+.noir-navbar {
+    min-height: 90px;
+    background-color: #050505;
+    border-bottom: 1px solid #242424;
+}
+
+
+.noir-logo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    font-weight: bold;
+    color: #f5f3ee;
+}
+
+
+.noir-logo:hover {
+    color: #c99a5b;
+}
+
+
+.navbar-nav {
+    gap: 22px;
+}
+
+
+.navbar-nav .nav-link {
+    color: #77736f;
+    font-size: 13px;
+    letter-spacing: 2px;
+
+    transition: color 0.3s ease;
+}
+
+
+.navbar-nav .nav-link:hover {
+    color: white;
+}
+
+
+
+/* =====================================================
+   ICONOS
+===================================================== */
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.icon-button {
+    color: #8b8883;
+    font-size: 20px;
+    border: none;
+}
+
+
+.icon-button:hover {
+    color: white;
+}
+
+
+#cartCounter {
+    background-color: #c99a5b;
+    color: #080808;
+    font-size: 9px;
+}
+
+
+
+/* =====================================================
+   CATEGORÍAS
+===================================================== */
+
+.category-navbar {
+    background-color: #090909;
+    border-bottom: 1px solid #282828;
+}
+
+
+.category-links {
+    display: flex;
+    overflow-x: auto;
+}
+
+
+.category-links::-webkit-scrollbar {
+    height: 3px;
+}
+
+
+.category {
+    background-color: transparent;
+
+    border: none;
+
+    border-bottom: 2px solid transparent;
+
+    color: #706d69;
+
+    padding: 20px 18px;
+
+    font-size: 13px;
+
+    letter-spacing: 1.5px;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+
+.category:hover {
+    color: white;
+}
+
+
+.category.active {
+    color: white;
+    border-bottom-color: white;
+}
+
+
+
+/* =====================================================
+   SELECT FEATURED
+===================================================== */
+
+.noir-select {
+    background-color: #090909;
+
+    border: none;
+
+    color: #77736f;
+
+    border-radius: 0;
+
+    font-size: 13px;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+}
+
+
+.noir-select:focus {
+    background-color: #090909;
+
+    color: white;
+
+    border-color: #333;
+
+    box-shadow: none;
+}
+
+
+
+/* =====================================================
+   SECCIÓN PRODUCTOS
+===================================================== */
+
+.product-section {
+    padding-top: 22px;
+    padding-bottom: 60px;
+}
+
+
+
+/* =====================================================
+   TARJETA PRODUCTO
+===================================================== */
+
+.product-card {
+    background-color: #050505;
+
+    border-right: 1px solid #292929;
+
+    border-bottom: 1px solid #292929;
+
+    overflow: hidden;
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+
+/* TODOS LOS PRODUCTOS SON CLICABLES */
+
+.clickable-product {
+    cursor: pointer;
+}
+
+
+.clickable-product:hover {
+    opacity: 0.94;
+}
+
+
+
+/* =====================================================
+   IMAGEN PRODUCTO
+===================================================== */
+
+.product-image {
+    position: relative;
+
+    width: 100%;
+
+    background-color: #ece8e2;
+
+    overflow: hidden;
+
+    aspect-ratio: 1 / 1.32;
+}
+
+
+.product-image img {
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+
+.product-card:hover .product-image img {
+    transform: scale(1.025);
+}
+
+
+
+/* =====================================================
+   BADGES
+===================================================== */
+
+.product-badge {
+    position: absolute;
+
+    top: 14px;
+
+    left: 14px;
+
+    z-index: 2;
+
+    padding: 6px 11px;
+
+    color: #080808;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+.product-badge.new {
+    background-color: #c7a16a;
+}
+
+
+.product-badge.trending {
+    background-color: #f3f0e9;
+}
+
+
+.product-badge.sale {
+    background-color: #ef4147;
+    color: white;
+}
+
+
+
+/* =====================================================
+   INFORMACIÓN DEL PRODUCTO
+===================================================== */
+
+.product-info {
+    min-height: 108px;
+
+    padding: 17px 18px;
+
+    background-color: #050505;
+}
+
+
+.brand {
+    margin: 0 0 7px;
+
+    color: #c99a5b;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.product-name {
+    margin: 0 0 8px;
+
+    color: #f4f4f4;
+
+    font-size: 15px;
+
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+.price {
+    margin: 0;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+.price del {
+    margin-left: 7px;
+
+    color: #65615d;
+
+    font-size: 13px;
+
+    font-weight: normal;
+}
+
+
+
+/* =====================================================
+   BUSCADOR OFFCANVAS
+===================================================== */
+
+.offcanvas {
+    background-color: #080808 !important;
+}
+
+
+.offcanvas-title {
+    letter-spacing: 2px;
+}
+
+
+#searchInput {
+    background-color: #111;
+
+    border: 1px solid #333;
+
+    border-radius: 0;
+
+    color: white;
+
+    padding: 15px;
+}
+
+
+#searchInput::placeholder {
+    color: #777;
+}
+
+
+#searchInput:focus {
+    border-color: #c99a5b;
+
+    box-shadow: none;
+
+    background-color: #111;
+
+    color: white;
+}
+
+
+
+/* =====================================================
+   RESPONSIVE TABLET
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .navbar-collapse {
+        padding: 25px 0;
+    }
+
+
+    .navbar-nav {
+        gap: 5px;
+    }
+
+
+    .navbar-icons {
+        margin-top: 15px;
+    }
+
+
+    .category-navbar {
+        padding-bottom: 10px;
+    }
+
+
+    .noir-select {
+        margin-top: 5px;
+        padding: 15px;
+    }
+
+
+    .product-image {
+        aspect-ratio: 1 / 1.25;
+    }
+
+}
+
+
+
+/* =====================================================
+   RESPONSIVE CELULAR
+===================================================== */
+
+@media (max-width: 576px) {
+
+    .product-section {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+
+    .product-image {
+        aspect-ratio: 1 / 1.15;
+    }
+
+
+    .product-info {
+        min-height: 100px;
+    }
+
+
+    .product-name {
+        font-size: 14px;
+    }
+
+
+    .category {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+}
+

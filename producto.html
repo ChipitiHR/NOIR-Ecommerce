@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NOIR. | Product</title>
+
+
+    <!-- BOOTSTRAP -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- BOOTSTRAP ICONS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+    <!-- CSS DE PRODUCTO -->
+    <link
+        rel="stylesheet"
+        href="css/producto.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER / NAVBAR
+===================================================== -->
+
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark noir-navbar">
+
+        <div class="container-fluid px-lg-5">
+
+
+            <!-- LOGO -->
+
+            <a
+                class="navbar-brand noir-logo"
+                href="Noir.html">
+
+                NOIR.
+
+            </a>
+
+
+            <!-- BOTÓN RESPONSIVE -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- MENÚ -->
+
+            <div
+                class="collapse navbar-collapse"
+                id="mainNavbar">
+
+
+                <ul class="navbar-nav mx-auto">
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="Noir.html">
+
+                            MEN
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="Noir.html">
+
+                            WOMEN
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="Noir.html">
+
+                            SNEAKERS
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="Noir.html">
+
+                            BAGS
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="Noir.html">
+
+                            SALE
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+
+
+                <!-- ICONOS -->
+
+                <div class="navbar-icons">
+
+
+                    <!-- BUSCADOR -->
+
+                    <a
+                        href="Noir.html"
+                        class="btn icon-button">
+
+                        <i class="bi bi-search"></i>
+
+                    </a>
+
+
+                    <!-- CARRITO -->
+
+                    <button
+                        class="btn icon-button position-relative"
+                        type="button">
+
+                        <i class="bi bi-bag"></i>
+
+
+                        <span
+                            id="cartCounter"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+
+                            0
+
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     PRODUCTO
+===================================================== -->
+
+<main class="product-page">
+
+
+    <div class="container-fluid product-container">
+
+
+        <!-- =================================================
+             BREADCRUMB
+        ================================================== -->
+
+        <div class="breadcrumb-noir">
+
+
+            <a href="Noir.html">
+
+                Catalog
+
+            </a>
+
+
+            <span>
+
+                /
+
+            </span>
+
+
+            <span id="breadcrumbProduct">
+
+                Product
+
+            </span>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             CONTENIDO
+        ================================================== -->
+
+        <div class="row g-4">
+
+
+            <!-- =============================================
+                 IZQUIERDA
+                 UNA SOLA IMAGEN
+            ============================================== -->
+
+            <div class="col-lg-8">
+
+
+                <div class="product-gallery">
+
+
+                    <div class="gallery-image">
+
+
+                        <img
+                            id="mainProductImage"
+                            src="GoldenRed.avif"
+                            alt="Selected Product">
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 DERECHA
+                 INFORMACIÓN DEL PRODUCTO
+            ============================================== -->
+
+            <div class="col-lg-4">
+
+
+                <div class="product-details">
+
+
+                    <!-- MARCA -->
+
+                    <p
+                        class="product-brand"
+                        id="productBrand">
+
+                        GOLDEN GOOSE
+
+                    </p>
+
+
+
+                    <!-- NOMBRE -->
+
+                    <h1
+                        class="product-title"
+                        id="productName">
+
+                        Super-Star Leather Sneakers
+
+                    </h1>
+
+
+
+                    <!-- PRECIO -->
+
+                    <p
+                        class="product-price"
+                        id="productPrice">
+
+                        $530
+
+                    </p>
+
+
+                    <p class="tax-text">
+
+                        Duties & taxes included
+
+                    </p>
+
+
+
+                    <hr class="divider">
+
+
+
+                    <!-- =====================================
+                         TALLAS
+                    ====================================== -->
+
+                    <div class="size-header">
+
+
+                        <span>
+
+                            SELECT SIZE
+
+                        </span>
+
+
+                        <button
+                            class="size-guide"
+                            type="button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#sizeGuideModal">
+
+                            Size Guide
+
+                        </button>
+
+
+                    </div>
+
+
+
+                    <div class="size-grid">
+
+
+                        <button
+                            class="size-button"
+                            type="button"
+                            data-size="XS">
+
+                            XS
+
+                        </button>
+
+
+                        <button
+                            class="size-button"
+                            type="button"
+                            data-size="S">
+
+                            S
+
+                        </button>
+
+
+                        <button
+                            class="size-button"
+                            type="button"
+                            data-size="M">
+
+                            M
+
+                        </button>
+
+
+                        <button
+                            class="size-button"
+                            type="button"
+                            data-size="L">
+
+                            L
+
+                        </button>
+
+
+                        <button
+                            class="size-button"
+                            type="button"
+                            data-size="XL">
+
+                            XL
+
+                        </button>
+
+
+                        <button
+                            class="size-button"
+                            type="button"
+                            data-size="XXL">
+
+                            XXL
+
+                        </button>
+
+
+                    </div>
+
+
+
+                    <!-- MENSAJE SI NO SELECCIONA TALLA -->
+
+                    <p
+                        id="sizeMessage"
+                        class="size-message">
+
+                        Please select a size.
+
+                    </p>
+
+
+
+                    <hr class="divider">
+
+
+
+                    <!-- =====================================
+                         ADD TO BAG
+                    ====================================== -->
+
+                    <button
+                        id="addToBag"
+                        class="add-to-bag"
+                        type="button">
+
+                        ADD TO BAG
+
+                    </button>
+
+
+
+                    <!-- =====================================
+                         WISHLIST
+                    ====================================== -->
+
+                    <button
+                        id="wishlistButton"
+                        class="wishlist-button"
+                        type="button">
+
+
+                        <i class="bi bi-heart"></i>
+
+
+                        <span>
+
+                            WISHLIST
+
+                        </span>
+
+
+                    </button>
+
+
+
+                    <!-- =====================================
+                         INFORMACIÓN ADICIONAL
+                    ====================================== -->
+
+                    <div class="information-section">
+
+
+
+                        <!-- PRODUCT DETAILS -->
+
+                        <button
+                            class="information-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#productDetails">
+
+
+                            <span>
+
+                                PRODUCT DETAILS
+
+                            </span>
+
+
+                            <i class="bi bi-chevron-down"></i>
+
+
+                        </button>
+
+
+                        <div
+                            class="collapse information-content"
+                            id="productDetails">
+
+
+                            <p>
+
+                                Carefully selected designer piece
+                                available through NOIR.
+
+                            </p>
+
+
+                            <p>
+
+                                Product condition: New.
+
+                            </p>
+
+
+                        </div>
+
+
+
+                        <!-- SHIPPING -->
+
+                        <button
+                            class="information-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#shippingReturns">
+
+
+                            <span>
+
+                                SHIPPING & RETURNS
+
+                            </span>
+
+
+                            <i class="bi bi-chevron-down"></i>
+
+
+                        </button>
+
+
+                        <div
+                            class="collapse information-content"
+                            id="shippingReturns">
+
+
+                            <p>
+
+                                Worldwide shipping available.
+
+                            </p>
+
+
+                            <p>
+
+                                Returns accepted within 14 days
+                                of delivery.
+
+                            </p>
+
+
+                        </div>
+
+
+
+                        <!-- AUTHENTICITY -->
+
+                        <button
+                            class="information-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#authenticity">
+
+
+                            <span>
+
+                                AUTHENTICITY
+
+                            </span>
+
+
+                            <i class="bi bi-chevron-down"></i>
+
+
+                        </button>
+
+
+                        <div
+                            class="collapse information-content"
+                            id="authenticity">
+
+
+                            <p>
+
+                                Every item sold by NOIR is
+                                inspected before shipment.
+
+                            </p>
+
+
+                            <p>
+
+                                We guarantee the authenticity
+                                of every designer product.
+
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     SIZE GUIDE
+===================================================== -->
+
+<div
+    class="modal fade"
+    id="sizeGuideModal"
+    tabindex="-1">
+
+
+    <div class="modal-dialog modal-dialog-centered">
+
+
+        <div class="modal-content size-modal">
+
+
+            <div class="modal-header">
+
+
+                <h5 class="modal-title">
+
+                    SIZE GUIDE
+
+                </h5>
+
+
+                <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="modal">
+
+                </button>
+
+
+            </div>
+
+
+
+            <div class="modal-body">
+
+
+                <table class="table table-dark size-table">
+
+
+                    <thead>
+
+                        <tr>
+
+                            <th>SIZE</th>
+
+                            <th>US</th>
+
+                            <th>EU</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <tr>
+
+                            <td>XS</td>
+
+                            <td>34</td>
+
+                            <td>44</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>S</td>
+
+                            <td>36</td>
+
+                            <td>46</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>M</td>
+
+                            <td>38</td>
+
+                            <td>48</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>L</td>
+
+                            <td>40</td>
+
+                            <td>50</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>XL</td>
+
+                            <td>42</td>
+
+                            <td>52</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>XXL</td>
+
+                            <td>44</td>
+
+                            <td>54</td>
+
+                        </tr>
+
+
+                    </tbody>
+
+
+                </table>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     BOOTSTRAP JAVASCRIPT
+===================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT PRODUCTO
+===================================================== -->
+
+<script src="js/producto.js"></script>
+
+
+</body>
+
+</html>

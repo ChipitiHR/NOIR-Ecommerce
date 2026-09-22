@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOIR. | Designer Fashion</title>
+
+    <!-- BOOTSTRAP -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark noir-navbar">
+
+            <div class="container-fluid px-lg-5">
+
+                <!-- LOGO -->
+
+                <a class="navbar-brand noir-logo" href="Noir.html">
+                    NOIR.
+                </a>
+
+
+                <!-- BOTÓN RESPONSIVE -->
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <!-- MENÚ -->
+
+                <div
+                    class="collapse navbar-collapse"
+                    id="mainNavbar">
+
+                    <ul class="navbar-nav mx-auto">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="#">
+                                MEN
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="#">
+                                WOMEN
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="#">
+                                SNEAKERS
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="#">
+                                BAGS
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="#">
+                                SALE
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+
+                    <!-- ICONOS -->
+
+                    <div class="navbar-icons">
+
+                        <!-- BUSCADOR -->
+
+                        <button
+                            class="btn icon-button"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#searchMenu">
+
+                            <i class="bi bi-search"></i>
+
+                        </button>
+
+
+                        <!-- CARRITO -->
+
+                        <button
+                            class="btn icon-button position-relative"
+                            type="button">
+
+                            <i class="bi bi-bag"></i>
+
+                            <span
+                                id="cartCounter"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+
+                                0
+
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- =====================================================
+             CATEGORÍAS
+        ====================================================== -->
+
+        <nav class="category-navbar">
+
+            <div class="container-fluid px-lg-5">
+
+                <div class="row align-items-center">
+
+
+                    <div class="col-lg-9">
+
+                        <div class="category-links">
+
+
+                            <button
+                                class="category active"
+                                data-category="all">
+
+                                ALL
+
+                            </button>
+
+
+                            <button
+                                class="category"
+                                data-category="sneakers">
+
+                                SNEAKERS
+
+                            </button>
+
+
+                            <button
+                                class="category"
+                                data-category="bags">
+
+                                BAGS
+
+                            </button>
+
+
+                            <button
+                                class="category"
+                                data-category="tops">
+
+                                TOPS
+
+                            </button>
+
+
+                            <button
+                                class="category"
+                                data-category="footwear">
+
+                                FOOTWEAR
+
+                            </button>
+
+
+                            <button
+                                class="category"
+                                data-category="accessories">
+
+                                ACCESSORIES
+
+                            </button>
+
+
+                            <button
+                                class="category"
+                                data-category="outerwear">
+
+                                OUTERWEAR
+
+                            </button>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ORDENAR -->
+
+                    <div class="col-lg-3">
+
+                        <select
+                            id="sortProducts"
+                            class="form-select noir-select">
+
+                            <option value="featured">
+                                FEATURED
+                            </option>
+
+                            <option value="low">
+                                PRICE: LOW TO HIGH
+                            </option>
+
+                            <option value="high">
+                                PRICE: HIGH TO LOW
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         CATÁLOGO
+    ====================================================== -->
+
+    <main>
+
+        <section
+            class="container-fluid px-lg-5 product-section">
+
+            <div
+                class="row g-0"
+                id="productGrid">
+
+
+                <!-- =================================================
+                     PRODUCTO 1
+                     MAISON MARGIELA
+                ================================================== -->
+
+                <article
+                    class="col-12 col-sm-6 col-lg-3 product-card clickable-product"
+
+                    data-category="sneakers"
+
+                    data-brand="MAISON MARGIELA"
+
+                    data-name="Replica Gats"
+
+                    data-price="850"
+
+                    data-image="MaisonMargiela.webp">
+
+
+                    <div class="product-image">
+
+                        <span class="product-badge new">
+                            NEW
+                        </span>
+
+                        <img
+                            src="MaisonMargiela.webp"
+                            alt="Maison Margiela Replica Gats">
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="brand">
+                            MAISON MARGIELA
+                        </p>
+
+                        <h2 class="product-name">
+                            Replica Gats
+                        </h2>
+
+                        <p class="price">
+                            $850
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     PRODUCTO 2
+                     GOLDEN GOOSE
+                ================================================== -->
+
+                <article
+                    class="col-12 col-sm-6 col-lg-3 product-card clickable-product"
+
+                    data-category="sneakers"
+
+                    data-brand="GOLDEN GOOSE"
+
+                    data-name="Super-Star Leather Sneakers"
+
+                    data-price="530"
+
+                    data-image="GoldenRed.avif">
+
+
+                    <div class="product-image">
+
+                        <span class="product-badge trending">
+                            TRENDING
+                        </span>
+
+                        <img
+                            src="GoldenRed.avif"
+                            alt="Golden Goose Super-Star Leather Sneakers">
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="brand">
+                            GOLDEN GOOSE
+                        </p>
+
+                        <h2 class="product-name">
+                            Super-Star Leather Sneakers
+                        </h2>
+
+                        <p class="price">
+                            $530
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     PRODUCTO 3
+                     ACNE STUDIOS
+                ================================================== -->
+
+                <article
+                    class="col-12 col-sm-6 col-lg-3 product-card clickable-product"
+
+                    data-category="tops"
+
+                    data-brand="ACNE STUDIOS"
+
+                    data-name="Stockholm 1996 Long-Sleeve Tee"
+
+                    data-price="210"
+
+                    data-image="AcneStudios.webp">
+
+
+                    <div class="product-image">
+
+                        <span class="product-badge sale">
+                            SALE
+                        </span>
+
+                        <img
+                            src="AcneStudios.webp"
+                            alt="Acne Studios Stockholm 1996 Long-Sleeve Tee">
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="brand">
+                            ACNE STUDIOS
+                        </p>
+
+                        <h2 class="product-name">
+                            Stockholm 1996 Long-Sleeve Tee
+                        </h2>
+
+                        <p class="price">
+
+                            $210
+
+                            <del>
+                                $450
+                            </del>
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     PRODUCTO 4
+                     CARTIER
+                ================================================== -->
+
+                <article
+                    class="col-12 col-sm-6 col-lg-3 product-card clickable-product"
+
+                    data-category="accessories"
+
+                    data-brand="CARTIER"
+
+                    data-name="Tank Louis Cartier Watch"
+
+                    data-price="9300"
+
+                    data-image="Cartier.webp">
+
+
+                    <div class="product-image">
+
+                        <span class="product-badge new">
+                            NEW
+                        </span>
+
+                        <img
+                            src="Cartier.avif"
+                            alt="Tank Louis Cartier Watch">
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="brand">
+                            CARTIER
+                        </p>
+
+                        <h2 class="product-name">
+                            Tank Louis Cartier Watch
+                        </h2>
+
+                        <p class="price">
+                            $9,300
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     PRODUCTO 5
+                     AMI PARIS
+                ================================================== -->
+
+                <article
+                    class="col-12 col-sm-6 col-lg-3 product-card clickable-product"
+
+                    data-category="tops"
+
+                    data-brand="AMI PARIS"
+
+                    data-name="Ami de Coeur Knit Sweater"
+
+                    data-price="330"
+
+                    data-image="Ami.webp">
+
+
+                    <div class="product-image">
+
+                        <img
+                            src="Ami.webp"
+                            alt="AMI Paris Ami de Coeur Knit Sweater">
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="brand">
+                            AMI PARIS
+                        </p>
+
+                        <h2 class="product-name">
+                            Ami de Coeur Knit Sweater
+                        </h2>
+
+                        <p class="price">
+                            $330
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     PRODUCTO 6
+                     COS
+                ================================================== -->
+
+                <article
+                    class="col-12 col-sm-6 col-lg-3 product-card clickable-product"
+
+                    data-category="outerwear"
+
+                    data-brand="COS"
+
+                    data-name="Felted Coat with High Collar"
+
+                    data-price="210"
+
+                    data-image="HighNeck.avif">
+
+
+                    <div class="product-image">
+
+                        <span class="product-badge sale">
+                            SALE
+                        </span>
+
+                        <img
+                            src="HighNeck.avif"
+                            alt="COS Felted Coat with High Collar">
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="brand">
+                            COS
+                        </p>
+
+                        <h2 class="product-name">
+                            Felted Coat with High Collar
+                        </h2>
+
+                        <p class="price">
+
+                            $210
+
+                            <del>
+                                $420
+                            </del>
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     PRODUCTO 7
+                     ACNE STUDIOS
+                ================================================== -->
+
+                <article
+                    class="col-12 col-sm-6 col-lg-3 product-card clickable-product"
+
+                    data-category="accessories"
+
+                    data-brand="ACNE STUDIOS"
+
+                    data-name="Skinny Mohair Scarf"
+
+                    data-price="320"
+
+                    data-image="AcneScarf.webp">
+
+
+                    <div class="product-image">
+
+                        <span class="product-badge new">
+                            NEW
+                        </span>
+
+                        <img
+                            src="AcneScarf.webp"
+                            alt="Acne Studios Skinny Mohair Scarf">
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="brand">
+                            ACNE STUDIOS
+                        </p>
+
+                        <h2 class="product-name">
+                            Skinny Mohair Scarf
+                        </h2>
+
+                        <p class="price">
+                            $320
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     PRODUCTO 8
+                     MAISON MARGIELA
+                ================================================== -->
+
+                <article
+                    class="col-12 col-sm-6 col-lg-3 product-card clickable-product"
+
+                    data-category="footwear"
+
+                    data-brand="MAISON MARGIELA"
+
+                    data-name="Black Tabi Babouche Loafers"
+
+                    data-price="1200"
+
+                    data-image="MuiMui.webp">
+
+
+                    <div class="product-image">
+
+                        <img
+                            src="MuiMui.webp"
+                            alt="Maison Margiela Black Tabi Babouche Loafers">
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="brand">
+                            MAISON MARGIELA
+                        </p>
+
+                        <h2 class="product-name">
+                            Black Tabi Babouche Loafers
+                        </h2>
+
+                        <p class="price">
+                            $1,200
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         BUSCADOR OFFCANVAS
+    ====================================================== -->
+
+    <div
+        class="offcanvas offcanvas-end text-bg-dark"
+        tabindex="-1"
+        id="searchMenu">
+
+
+        <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title">
+                SEARCH
+            </h5>
+
+            <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas">
+            </button>
+
+        </div>
+
+
+        <div class="offcanvas-body">
+
+            <input
+                type="text"
+                id="searchInput"
+                class="form-control"
+                placeholder="Search products...">
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- JAVASCRIPT PROPIO -->
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
+

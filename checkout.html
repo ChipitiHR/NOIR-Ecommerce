@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOIR. | Checkout</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark noir-navbar">
+
+        <div class="container-fluid px-lg-5">
+
+            <!-- LOGO -->
+            <a class="navbar-brand noir-logo" href="Noir.html">
+                NOIR.
+            </a>
+
+            <!-- BOTÓN RESPONSIVE -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div
+                class="collapse navbar-collapse"
+                id="mainNavbar">
+
+                <!-- MENÚ -->
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Noir.html">
+                            MEN
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Noir.html">
+                            WOMEN
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Noir.html">
+                            SNEAKERS
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Noir.html">
+                            BAGS
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Noir.html">
+                            SALE
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- ICONOS -->
+
+                <div class="navbar-icons">
+
+                    <a
+                        href="Noir.html"
+                        class="btn icon-button">
+
+                        <i class="bi bi-search"></i>
+
+                    </a>
+
+
+                    <button
+                        class="btn icon-button position-relative"
+                        type="button">
+
+                        <i class="bi bi-bag"></i>
+
+                        <span
+                            id="cartCounter"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+
+                            1
+
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     CHECKOUT
+===================================================== -->
+
+<main class="checkout-page">
+
+    <div class="container-fluid checkout-container">
+
+
+        <!-- TÍTULO -->
+
+        <div class="checkout-title">
+
+            <a
+                href="producto.html"
+                class="back-button">
+
+                <i class="bi bi-chevron-left"></i>
+
+            </a>
+
+            <h1>
+                Checkout
+            </h1>
+
+        </div>
+
+
+
+        <div class="row checkout-row">
+
+
+            <!-- =================================================
+                 LADO IZQUIERDO
+            ================================================== -->
+
+            <div class="col-lg-8">
+
+
+                <!-- PASOS -->
+
+                <div class="checkout-steps">
+
+
+                    <div
+                        class="checkout-step active"
+                        id="shippingStep">
+
+                        <span class="step-number">
+                            1
+                        </span>
+
+                        <span>
+                            SHIPPING
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        class="checkout-step"
+                        id="paymentStep">
+
+                        <span class="step-number">
+                            2
+                        </span>
+
+                        <span>
+                            PAYMENT
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     FORMULARIO SHIPPING
+                ================================================== -->
+
+                <form
+                    id="shippingForm"
+                    class="checkout-form">
+
+
+                    <h2>
+                        DELIVERY INFORMATION
+                    </h2>
+
+
+                    <!-- NOMBRE + EMAIL -->
+
+                    <div class="row g-3">
+
+
+                        <div class="col-md-6">
+
+                            <label for="fullName">
+                                FULL NAME
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                required>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label for="email">
+                                EMAIL ADDRESS
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                required>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- DIRECCIÓN -->
+
+                    <div class="form-group">
+
+                        <label for="address">
+                            STREET ADDRESS
+                        </label>
+
+                        <input
+                            type="text"
+                            id="address"
+                            required>
+
+                    </div>
+
+
+
+                    <!-- CITY / ZIP / COUNTRY -->
+
+                    <div class="row g-3">
+
+
+                        <div class="col-md-4">
+
+                            <label for="city">
+                                CITY
+                            </label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                required>
+
+                        </div>
+
+
+                        <div class="col-md-4">
+
+                            <label for="zip">
+                                ZIP / POSTAL
+                            </label>
+
+                            <input
+                                type="text"
+                                id="zip"
+                                required>
+
+                        </div>
+
+
+                        <div class="col-md-4">
+
+                            <label for="country">
+                                COUNTRY
+                            </label>
+
+                            <select
+                                id="country"
+                                required>
+
+                                <option value="Mexico">
+                                    Mexico
+                                </option>
+
+                                <option value="United States">
+                                    United States
+                                </option>
+
+                                <option value="Canada">
+                                    Canada
+                                </option>
+
+                                <option value="Spain">
+                                    Spain
+                                </option>
+
+                                <option value="France">
+                                    France
+                                </option>
+
+                                <option value="Italy">
+                                    Italy
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- CONTINUE -->
+
+                    <button
+                        type="submit"
+                        class="checkout-button">
+
+                        CONTINUE TO PAYMENT
+
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- =================================================
+                     PAYMENT
+                ================================================== -->
+
+                <form
+                    id="paymentForm"
+                    class="checkout-form payment-form">
+
+
+                    <h2>
+                        PAYMENT INFORMATION
+                    </h2>
+
+
+                    <!-- NOMBRE -->
+
+                    <div class="form-group">
+
+                        <label for="cardName">
+                            NAME ON CARD
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cardName"
+                            autocomplete="off"
+                            required>
+
+                    </div>
+
+
+
+                    <!-- CARD NUMBER -->
+
+                    <div class="form-group">
+
+                        <label for="cardNumber">
+                            CARD NUMBER
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cardNumber"
+                            maxlength="19"
+                            inputmode="numeric"
+                            autocomplete="off"
+                            placeholder="0000 0000 0000 0000"
+                            required>
+
+                    </div>
+
+
+
+                    <!-- EXPIRATION + CVV -->
+
+                    <div class="row g-3">
+
+
+                        <div class="col-md-6">
+
+                            <label for="expiration">
+                                EXPIRATION DATE
+                            </label>
+
+                            <input
+                                type="text"
+                                id="expiration"
+                                maxlength="5"
+                                inputmode="numeric"
+                                autocomplete="off"
+                                placeholder="MM/YY"
+                                required>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <label for="cvv">
+                                CVV
+                            </label>
+
+                            <input
+                                type="password"
+                                id="cvv"
+                                maxlength="4"
+                                inputmode="numeric"
+                                autocomplete="off"
+                                placeholder="•••"
+                                required>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="payment-buttons">
+
+
+                        <button
+                            type="button"
+                            id="backToShipping"
+                            class="back-shipping">
+
+                            BACK
+
+                        </button>
+
+
+                        <button
+                            type="submit"
+                            class="checkout-button place-order">
+
+                            PLACE ORDER
+
+                        </button>
+
+
+                    </div>
+
+
+                </form>
+
+
+
+                <!-- =================================================
+                     CONFIRMACIÓN
+                ================================================== -->
+
+                <div
+                    id="orderConfirmation"
+                    class="order-confirmation">
+
+
+                    <i class="bi bi-check-circle"></i>
+
+
+                    <h2>
+                        ORDER CONFIRMED
+                    </h2>
+
+
+                    <p>
+                        Thank you for shopping at NOIR.
+                    </p>
+
+
+                    <a
+                        href="Noir.html"
+                        class="return-store">
+
+                        RETURN TO STORE
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ORDER SUMMARY
+            ================================================== -->
+
+            <div class="col-lg-4">
+
+
+                <aside class="order-summary">
+
+
+                    <h2>
+                        ORDER SUMMARY
+                    </h2>
+
+
+
+                    <!-- PRODUCTO -->
+
+                    <div class="summary-product">
+
+
+                        <div class="summary-image">
+
+                            <img
+                                id="summaryImage"
+                                src="GoldenRed.avif"
+                                alt="Product">
+
+                        </div>
+
+
+
+                        <div class="summary-info">
+
+
+                            <p
+                                class="summary-brand"
+                                id="summaryBrand">
+
+                                GOLDEN GOOSE
+
+                            </p>
+
+
+                            <h3 id="summaryName">
+
+                                Super-Star Leather Sneakers
+
+                            </h3>
+
+
+                            <p class="summary-small">
+
+                                Qty: 1
+
+                            </p>
+
+
+                            <p
+                                class="summary-small"
+                                id="summarySize">
+
+                                Size: S
+
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="summary-divider"></div>
+
+
+
+                    <!-- PRECIOS -->
+
+                    <div class="summary-line">
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <span id="subtotal">
+                            $530
+                        </span>
+
+                    </div>
+
+
+                    <div class="summary-line">
+
+                        <span>
+                            Shipping
+                        </span>
+
+                        <span class="white">
+                            Complimentary
+                        </span>
+
+                    </div>
+
+
+                    <div class="summary-line">
+
+                        <span>
+                            Duties & Taxes
+                        </span>
+
+                        <span class="white">
+                            Included
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="summary-divider small"></div>
+
+
+
+                    <div class="summary-line total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <span id="total">
+                            $530
+                        </span>
+
+                    </div>
+
+
+                </aside>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- BOOTSTRAP JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- CHECKOUT JS -->
+
+<script src="js/checkout.js"></script>
+
+
+</body>
+
+</html>
