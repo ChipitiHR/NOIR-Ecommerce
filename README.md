@@ -43,7 +43,7 @@ NOIR-Ecommerce/
 └── imágenes y archivos de Bootstrap
 ```
 
-## Conclusión
+## Conclusión del entregable 4
 
 El desarrollo de este proyecto permitió transformar los prototipos realizados previamente en un sitio web funcional de comercio electrónico. Se desarrollaron tres páginas conectadas entre sí, haciendo posible seleccionar diferentes productos desde el catálogo, consultar la información de cada artículo, elegir una talla y continuar hasta un proceso de checkout.
 
