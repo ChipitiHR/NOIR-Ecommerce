@@ -49,4 +49,12 @@ El desarrollo de este proyecto permitió transformar los prototipos realizados p
 
 Durante el proyecto se aplicaron conocimientos de HTML para estructurar las páginas, CSS y Bootstrap para crear el diseño y hacerlo responsivo, y JavaScript para agregar interactividad y conectar el funcionamiento de las diferentes páginas. También se utilizó LocalStorage para conservar la información del producto seleccionado durante la navegación. En conclusión, este proyecto permitió integrar los conocimientos aprendidos durante el curso y comprender mejor cómo diferentes tecnologías web pueden trabajar en conjunto para crear una experiencia de compra funcional e interactiva.
 
+## Conclusión final del proyecto
+
+La realización de NOIR. permitió llevar una idea de tienda en línea desde su planeación inicial hasta un sitio web con tres páginas conectadas. En la primera fase se definió el propósito del proyecto: facilitar la búsqueda de ropa, calzado y accesorios de diseñador en un mismo lugar. Después, los prototipos ayudaron a visualizar cómo navegaría el usuario por el catálogo, la página de producto y el checkout antes de comenzar a programar.
+
+La maquetación permitió convertir esas ideas en una estructura clara y adaptable a diferentes tamaños de pantalla. Posteriormente, con HTML, CSS y Bootstrap se construyó la apariencia de las páginas, mientras que JavaScript agregó funciones para seleccionar un producto, elegir una talla y conservar sus datos durante la navegación mediante LocalStorage. Finalmente, se integraron las tres páginas y se simuló el proceso de compra.
+
+Este proyecto mostró la importancia de avanzar por etapas: definir una necesidad, diseñar una solución, construirla y revisar que sus partes funcionen juntas. También permitió aplicar los conocimientos del curso en un resultado concreto y comprender cómo el diseño y la programación se combinan para crear una experiencia de compra más completa.
+
 > **Nota:** El checkout es una simulación académica y no procesa pagos reales.
